@@ -1,5 +1,9 @@
 pipeline {
-		agent slave1
+		agent {
+			label {
+				label "slave1"
+				  }
+			  }
 			stages {
 				stage ("cleaning workspace") {
 					steps {
